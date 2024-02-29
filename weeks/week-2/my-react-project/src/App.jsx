@@ -3,6 +3,12 @@ import { NonDestructured } from "./components/prop-examples/NonDestructured";
 import { BandList } from "./components/bands/BandList";
 import { ConditionalProp } from "./components/prop-examples/ConditionalProp";
 import { PropDrilling } from "./components/prop-examples/PropDrilling";
+import { ObjectType } from "./components/default-props/ObjectType";
+import { ObjectTypePropTypes } from "./components/default-props/prop-types/ObjectTypePropTypes";
+import { DestructuredDefault } from "./components/default-props/DestructuredDefault";
+import { DestructuredDefaultPropTypes } from "./components/default-props/prop-types/DestructuredDefaultPropTypes";
+import { Children } from "./components/children-props/Children";
+import { Pokemons } from "./components/pokemon-example/Pokemons";
 
 export const App = () => {
   const string = "I like listening to the  Red Hot Chilli Peppers";
@@ -91,6 +97,8 @@ export const App = () => {
   // Boolean Val
   const isLoggedInTopLevel = false;
 
+  const { defaultvalue } = "Hello world";
+
   return (
     <>
       {/* --- */}
@@ -116,13 +124,35 @@ export const App = () => {
       {/* --- */}
 
       {/* UNCOMMENT TO VIEW IN ACTION */}
-      <BandList bands={bands} />
+      {/* <BandList bands={bands} /> */}
       {/* --- */}
       {/* --- */}
 
       {/* <ConditionalProp isLoggedin={isLoggedInTopLevel} /> */}
 
       {/* <PropDrilling stringProperty={string} /> */}
+
+      {/* THURDAY CLASS BELOW */}
+      {/* <ObjectType /> */}
+      {/* <ObjectType headingProp="I am a cool heading!!!" /> */}
+      <ObjectTypePropTypes />
+
+      {/* <DestructuredDefault /> */}
+      <DestructuredDefaultPropTypes />
+
+      {/* <Children /> */}
+
+      {/* <Children>hello world</Children> */}
+
+      {/* <Children>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+        veritatis voluptatibus quis, omnis illum labore incidunt ipsum facere
+        itaque natus tenetur cum sapiente quo recusandae blanditiis qui odit
+        numquam. Esse sint rem, reprehenderit iusto saepe officia eum recusandae
+        cum laudantium ex voluptatum ea harum. Molestias quisquam nesciunt
+        placeat earum culpa!
+      </Children> */}
+      <Pokemons />
     </>
   );
 };

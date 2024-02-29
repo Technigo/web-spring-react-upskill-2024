@@ -45,7 +45,7 @@ export const Pokemons = () => {
       <h2>Pokemon List</h2>
       {/* Option Demo */}
       {/* ------- */}
-      {pokemonsExample.map((pokemon) => (
+      {/* {pokemonsExample.map((pokemon) => (
         <>
           <h3>
             {pokemon.name} - {pokemon.id}
@@ -66,10 +66,10 @@ export const Pokemons = () => {
             ))}
           </ul>
         </>
-      ))}
+      ))} */}
       {/* OPTION 1 */}
       {/* ------- */}
-      {renderPokemons()}
+      {/* {renderPokemons()} */}
       {/* OPTION 2 */}
       {/* ------- */}
       {renderPokemonsDestructured()}

@@ -1,4 +1,6 @@
-export const ObjectType = ({
+import PropTypes from "prop-types";
+
+export const ObjectTypePropTypes = ({
   headingProp,
   subheadingProp,
   paragraphProp,
@@ -49,8 +51,25 @@ export const ObjectType = ({
   );
 };
 
+ObjectTypePropTypes.propTypes = {
+  headingProp: PropTypes.string,
+  subheadingProp: PropTypes.string,
+  paragraphProp: PropTypes.string,
+  arrayOfObjectsProp: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      lastName: PropTypes.string.isRequired,
+      country: PropTypes.string.isRequired,
+      favoriteFood: PropTypes.string.isRequired,
+    })
+  ),
+  arrayProp: PropTypes.arrayOf(PropTypes.number),
+  boolProp: PropTypes.bool,
+  numberProp: PropTypes.number,
+};
+
 // Ading a defauklt prop object to propagate component with info if o info is added on topLevel or where this comp is being inyected
-ObjectType.defaultProps = {
+ObjectTypePropTypes.defaultProps = {
   headingProp: "I am a heading", // String
   subheadingProp: "I am a subheading!", // String
   paragraphProp: "I am a paragraph", // Strings
