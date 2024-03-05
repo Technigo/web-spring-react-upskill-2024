@@ -5,11 +5,10 @@ import { LightBulbString } from "./components/example-one/LightBulbString";
 import { ExampleTwo } from "./components/Example-two/ExampleTwo";
 
 export const App = () => {
-  const [count, setCount] = useState(30);
   return (
     <>
       <div className="card">
-        <LightBulbString count={count} />
+        <LightBulbString />
         {/* <ExampleTwo /> */}
       </div>
     </>

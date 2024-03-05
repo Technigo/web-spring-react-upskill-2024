@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const LightBulbString = ({ count }) => {
+export const LightBulbString = () => {
   // Initialize our data
   const [usingAString, setUsingAString] = useState("off");
 
@@ -13,9 +13,7 @@ export const LightBulbString = ({ count }) => {
 
   return (
     <>
-      <p>
-        using a string instead of a boolean - {usingAString} -- {count}
-      </p>
+      <p>using a string instead of a boolean - {usingAString} </p>
       <div className="lightbulb-container">
         <div
           onClick={toggleStringValue}
