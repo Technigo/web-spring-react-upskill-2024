@@ -64,3 +64,48 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* FORM CSS */
+/* FORM CSS */
+.form-container,
+.form-responses {
+  border: 1px solid blue;
+  border-radius: 4px;
+  padding: 4rem;
+  margin-bottom: 2em;
+}
+
+label {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+input,
+select {
+  width: 300px;
+}
+
+.genres-container label {
+  width: 300px;
+  display: flex;
+}
+.genres-container input {
+  width: 30px;
+}
+
+.form-responses span {
+  font-weight: bold;
+  display: block;
+  width: 300px;
+  text-align: left;
+}
+.form-responses p {
+  text-align: left;
+}
+.response-genres {
+  text-align: left;
+  border: 1px solid blue;
+  padding: 0.5rem;
+  background: blue;
+  color: white;
+}

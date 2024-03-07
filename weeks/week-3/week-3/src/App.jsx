@@ -8,8 +8,8 @@ export const App = () => {
   return (
     <>
       <div className="card">
-        <LightBulbString />
-        {/* <ExampleTwo /> */}
+        {/* <LightBulbString /> */}
+        <ExampleTwo />
       </div>
     </>
   );
