@@ -1,5 +1,3 @@
-# Week 4
-
 ## The useEffect Hook
 
 #### What is `useEffect`?
