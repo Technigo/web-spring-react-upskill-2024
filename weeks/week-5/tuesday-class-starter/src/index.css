@@ -14,6 +14,12 @@
 
 .card {
   padding: 2em;
+  border: 1px solid red;
+}
+.card-menu {
+  padding: 2em;
+  margin: 0 0 2em 0;
+  border: 1px solid rgb(0, 30, 255);
 }
 
 .dog-card,
@@ -21,4 +27,48 @@
   padding: 2em;
   border: 1px solid red;
   margin: 1em 0;
+}
+
+.app-ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-li {
+  margin-bottom: 10px; /* Add some space between list items */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.pending {
+  color: #999;
+}
+
+.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.heading {
+  font-size: 1.5em;
+}
+.home-a {
+  display: block;
+  margin: 0 0 1em 0;
+}
+
+.hero-container {
+  background-image: url("https://cdn.wegow.com/media/artists/red-hot-chili-peppers/red-hot-chili-peppers-1634893172.0399256.1780x720.jpg"); /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; /* Adjust the height according to your needs */
 }

@@ -1,20 +1,19 @@
-import { Example } from "./components/Example";
-import { ExampleOne } from "./components/ExampleOne";
-import { ExampleTwo } from "./components/ExampleTwo";
-import { ExampleThree } from "./components/ExampleThree";
-import { Distributive } from "./components/Twitter/Distributive";
+import { BrowserRouter, Routes } from "react-router-dom";
+import { routes } from "./routes/routes";
+import { NavBar } from "./components/NavBar";
+import { NavBarLink } from "./components/NavBarLink";
 
 export const App = () => {
   return (
     <>
-      <h1>Learning the useEffect() Hook in react</h1>
-      <div className="card">
-        {/* <Example /> */}
-        {/* <ExampleOne /> */}
-        {/* <ExampleTwo /> */}
-        {/* <ExampleThree /> */}
-        <Distributive />
-      </div>
+      <BrowserRouter>
+        <NavBar />
+        <NavBarLink />
+
+        <div className="card">
+          <Routes>{routes}</Routes>
+        </div>
+      </BrowserRouter>
     </>
   );
 };
