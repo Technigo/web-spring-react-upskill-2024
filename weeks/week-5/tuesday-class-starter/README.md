@@ -1,6 +1,6 @@
 # Explanation
 
-## The React Router3
+## The React Router
 
 React Router is a library used in React applications to manage client-side routing, enabling the creation of single-page applications (SPAs). It is essential because it helps you navigate between different views or components within your application without the need to reload the entire page.
 
