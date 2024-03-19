@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { RandomErrorComp } from "./RandomErrorComp";
 
 export const NavBarLink = () => {
   const links = [
@@ -10,6 +11,7 @@ export const NavBarLink = () => {
 
   return (
     <div className="card-menu">
+      <RandomErrorComp />
       <nav>
         <h4> Using Nav Link Comp</h4>
         <ul className="app-ul">
