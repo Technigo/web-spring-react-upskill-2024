@@ -1,0 +1,24 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(29, 29, 29, 0.87);
+  background-color: #ffffff;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.dog-card,
+.shopping-card {
+  padding: 2em;
+  border: 1px solid red;
+  margin: 1em 0;
+}
