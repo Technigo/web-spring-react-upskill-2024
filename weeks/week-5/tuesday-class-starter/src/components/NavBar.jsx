@@ -10,6 +10,7 @@ export const NavBar = () => {
 
   return (
     <div className="card-menu">
+      <h4> Using Link Comp</h4>
       <nav>
         <ul className="app-ul">
           {links.map(({ to, text }) => (
