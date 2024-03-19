@@ -11,11 +11,11 @@ export const App = () => {
       <h1>Learning the useEffect() Hook in react</h1>
       <div className="card">
         <p>place comps here....</p>
-        <Example />
+        {/* <Example />
         <ExampleOne />
         <ExampleTwo />
         <ExampleThree />
-        <ExampleFour />
+        <ExampleFour /> */}
         <Distributive />
       </div>
     </>

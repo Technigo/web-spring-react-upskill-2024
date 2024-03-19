@@ -24,10 +24,7 @@ export const MultiStepForm = () => {
 
   // Function to update the form data based onn its inputField and value
   const updateFormData = (field, value) => {
-    setFormData((previousStepInfo) => ({
-      ...previousStepInfo,
-      [field]: value,
-    }));
+    setFormData((previous) => ({ ...previous, [field]: value }));
   };
 
   // State to track the current step in the form
@@ -85,8 +82,11 @@ export const MultiStepForm = () => {
   // function to submit the form itself
   const submitForm = () => {
     console.log(formData);
-    setFormSubmitted(true);
-    const formattedData = `
+    if (formData.favoriteGenre.length === 0) {
+      alert("Please select your your favorite Genres");
+    } else {
+      setFormSubmitted(true);
+      const formattedData = `
     Name: ${formData.name}
     Age: ${formData.age}
     Email: ${formData.email}
@@ -95,7 +95,8 @@ export const MultiStepForm = () => {
     Favorite Artist: ${formData.favoriteArtist}
     Favorite Genre: ${formData.favoriteGenre}
   `;
-    alert(formattedData);
+      alert(formattedData);
+    }
   };
 
   // Function to reset the form and start over
@@ -115,6 +116,7 @@ export const MultiStepForm = () => {
 
   return (
     <>
+      {currentStep != 7 && <h2>Grammys Voting Form</h2>}
       {currentStep === 1 && (
         <Name value={formData.name} updateFormData={updateFormData} />
       )}
@@ -137,7 +139,7 @@ export const MultiStepForm = () => {
         />
       )}
       {/* We'll be changing this later, why ? =- lasts steps and irst steps can be protected!  */}
-      {currentStep === 7 && (
+      {!formSubmitted && currentStep === 7 && (
         <Genres
           value={formData.favoriteGenre}
           updateFormData={updateFormData}

@@ -4,7 +4,7 @@ export const Name = ({ value, updateFormData }) => {
     <>
       <div className="form-container">
         <label>Enter your Name:</label>
-        <input type="text" name={value} onChange={getUserName} />
+        <input type="text" value={value} onChange={getUserName} />
       </div>
     </>
   );

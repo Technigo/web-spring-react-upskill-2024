@@ -1,5 +1,5 @@
 export const Email = ({ value, updateFormData }) => {
-  const getEmail = (e) => updateFormData("age", e.target.value);
+  const getEmail = (e) => updateFormData("email", e.target.value);
   return (
     <>
       <div className="form-container">
