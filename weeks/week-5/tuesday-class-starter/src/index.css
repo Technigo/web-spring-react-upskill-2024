@@ -29,6 +29,19 @@
   margin: 1em 0;
 }
 
+.book-card {
+  border: 1px solid red;
+  margin: 1em 0;
+}
+
+.book-card li {
+  border: 1px solid red;
+  list-style: none;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
 .app-ul {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
@@ -39,6 +52,20 @@
 
 .app-li {
   margin-bottom: 10px; /* Add some space between list items */
+  font-size: 0.7em;
+}
+
+.user-block-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-block-nav button {
+  height: 50%;
+}
+
+.user-block-nav .button-container {
+  margin: auto 0;
 }
 
 .nav-link {
@@ -74,4 +101,23 @@
 }
 .not-found p {
   font-size: 0.8rem;
+}
+
+.login input {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.login textarea {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.login button {
+  width: 50%;
+  padding: 1em;
 }

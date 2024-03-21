@@ -7,6 +7,7 @@ export const NavBarLink = () => {
     { to: "/", text: "Home Page " },
     { to: "/about", text: "About Page" },
     { to: "/my-info", text: "My Info Page" },
+    { to: "/login", text: "Login Page" },
   ];
 
   return (
